@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="row">
+	<div class="col-sm-4">
+  	<a href="{{site.url}}/physics/"><h4><span class="glyphicon glyphicon-arrow-left text-white"> cryptography index</span></h4></a>
+	</div>
+	<div class="col-sm-4">
+	{% if page.next and page.next.categories == page.categories %}	
+  <a href="{{page.next.url}}"><h4><span class="glyphicon glyphicon-arrow-left text-white"> {{page.next.postTitle}}</span></h4></a>
+  {% endif %}
+	</div>
+	<div class="col-sm-4">
+	{% if page.previous and page.previous.categories == page.categories %}		
+  <a href="{{page.previous.url}}"><h4>{{page.previous.postTitle}} 	<span class="glyphicon glyphicon-arrow-right text-white"></span></h4></a>
+  {% endif %}
+	</div>
+</div>
+<h2>{{ page.postTitle }}</h2>
+
+<div class="post">
+{{ content }}
+</div>
+
+<hr>
+<div class="row">
+	<div class="col-sm-4">
+  <a href="{{site.url}}/math/"><h4><span class="glyphicon glyphicon-list-alt text-white"> cryptography index</span></h4></a>
+	</div>
+	<div class="col-sm-4">
+	{% if page.next and page.next.categories == page.categories %}	
+  <a href="{{page.next.url}}"><h4><span class="glyphicon glyphicon-arrow-left text-white"> {{page.next.postTitle}}</span></h4></a>
+  {% endif %}
+	</div>
+	<div class="col-sm-4">
+	{% if page.previous and page.previous.categories == page.categories %}		
+  <a href="{{page.previous.url}}"><h4>{{page.previous.postTitle}} 	<span class="glyphicon glyphicon-arrow-right text-white"></span></h4></a>
+  {% endif %}
+	</div>
+</div>
