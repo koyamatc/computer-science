@@ -15,6 +15,14 @@ __Khan Academy__ で勉強したことなどをまとめています。
 
 <div class="row">
 	<div class="col-sm-4">
+		<h3><span class="label label-info">Algorithms</span></h3>
+		<ol class="post-list">
+ 			{% for post in site.categories.algorithms %}
+   				<li><a href="{{ post.url }}">{{ post.postTitle }}</a></li>
+ 			{% endfor %}
+		</ol>			
+	</div>
+	<div class="col-sm-4">
 		<h3><span class="label label-info">Cryptography(暗号法)</span></h3>
 		<ol class="post-list">
  			{% for post in site.categories.crypto %}
@@ -26,14 +34,6 @@ __Khan Academy__ で勉強したことなどをまとめています。
 		<h3><span class="label label-info">Information Theory</span></h3>
 		<ol class="post-list">
  			{% for post in site.categories.information %}
-   				<li><a href="{{ post.url }}">{{ post.postTitle }}</a></li>
- 			{% endfor %}
-		</ol>			
-	</div>
-	<div class="col-sm-4">
-		<h3><span class="label label-info"></span></h3>
-		<ol class="post-list">
- 			{% for post in site.categories.xx %}
    				<li><a href="{{ post.url }}">{{ post.postTitle }}</a></li>
  			{% endfor %}
 		</ol>			
